@@ -35,8 +35,8 @@ func main() {
 
 	// use static dirctory
 	http.Handle("/", http.StripPrefix("/", fsh))
-	log.Printf("Listening on *:9090")
-	err := http.ListenAndServe(":9090", nil)
+	log.Printf("Listening on *:8000")
+	err := http.ListenAndServe(":8000", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
